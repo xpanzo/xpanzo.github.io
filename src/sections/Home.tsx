@@ -50,7 +50,8 @@ const Icon = styled.img`
  * Section with min height as screen
  */
 const Section = styled.section`
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 120px);
+  padding-top: 40px;
 `;
 
 /**
@@ -61,21 +62,21 @@ export default function Home() {
     <Section id="home" className="d-flex align-items-center">
       <Container fluid id="home">
         <Row>
-          <Col md={6} className="my-6">
-            <BatchView className="my-3 text-center">
-              Design & Development Agency
-            </BatchView>
-            <div className="my-4 fs-1 fw-bold">
+          <Col md={6} className="my-6 d-flex align-items-center flex-column d-md-block">
+            <div className="my-4 fs-1 fw-bold text-center text-md-start">
               Expanding Your Business with us <BlueText>Digitally</BlueText>
             </div>
-            <div className="my-4 fs-5">
+            <BatchView className="my-3 text-center text-md-start">
+              Design & Development Agency
+            </BatchView>
+            <div className="my-4 fs-5 text-center text-md-start">
               <GrayText>
                 Support small business and join the nationwide
                 movement to encourage commercial support for
                 the millions of minority
               </GrayText>
             </div>
-            <div className="my-4 fs-5 fw-bold">
+            <div className="my-4 fs-5 fw-bold text-center text-md-start">
               Follow us On Social Media
             </div>
             <div className="my-4 d-flex">
